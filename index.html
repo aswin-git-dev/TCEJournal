@@ -17,20 +17,21 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-image: url('tce.jpg'); /* Background image URL */
-      background-size: cover; /* Ensures the image covers the entire page */
-      background-position: center center; /* Centers the image */
-      background-attachment: fixed; /* Keeps the background fixed during scrolling */
-      color: #5a4e3e; /* Relaxing, soft brown tone */
+      background-image: url('tce.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #5a4e3e;
     }
     .navbar {
-      background-color: brown; /* Coral color */
+      background-color: brown;
     }
+    
     .navbar-brand, .nav-link {
       color: white !important;
-      font-family: 'Poppins', sans-serif; /* Change the font style in the navbar */
-      font-size: 1rem; /* Smaller font size */
-      font-weight: 900; /* Bold text */
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.97rem;
+      font-weight: 900;
       text-transform: uppercase;
     }
     .navbar-brand:hover, .nav-link:hover {
@@ -38,7 +39,7 @@
       text-decoration: underline;
     }
     .navbar-nav .nav-item.active .nav-link {
-      color: #FF4F3A !important; /* Highlight active page */
+      color: #FF4F3A !important;
       font-weight: 700;
     }
     .section-title {
@@ -83,7 +84,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     .card-body {
-      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -106,6 +107,32 @@
       line-height: 1.8;
       text-align: justify;
     }
+
+    /* New Carousel Styles */
+    #imageCarousel {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .carousel-item {
+      height: 400px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -120,17 +147,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#aim-scope"><i class="fas fa-bullseye"></i> Aim & Scope</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="editorial-board.html"><i class="fas fa-users"></i> Editorial Board</a>
+          <a class="nav-link" href="board.html"><i class="fas fa-users"></i> Board Members</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="editorial-policies.html"><i class="fas fa-gavel"></i> Editorial Policies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#submission-guidelines"><i class="fas fa-file-alt"></i> Submission Guidelines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#interdisciplinary-focus"><i class="fas fa-crosshairs"></i> Interdisciplinary Focus</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#publication-types"><i class="fas fa-th"></i> Publication Types</a>
@@ -154,13 +184,13 @@
     <div id="imageCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="pic2.jpg" class="d-block w-100" alt="Update Image 1">
+          <img src="pic2.jpg" class="d-block" alt="Update Image 1">
         </div>
         <div class="carousel-item">
-          <img src="pic1.jpeg" class="d-block w-100" alt="Update Image 2">
+          <img src="pic1.jpeg" class="d-block" alt="Update Image 2">
         </div>
         <div class="carousel-item">
-          <img src="logo.png" class="d-block w-100" alt="Update Image 3">
+          <img src="logo.png" class="d-block" alt="Update Image 3">
         </div>
       </div>
       <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -177,23 +207,72 @@
 
   <!-- Home Page Content -->
   <div class="container">
-
     <!-- Aim & Scope Section -->
-    <div id="aim-scope" class="card">
-      <div class="card-body">
-        <h2 class="section-title">Aim & Scope</h2>
-        <p>The Thiagarajar Journal of Engineering, Science, Design, and Technology (TJESDT) aims to be an interdisciplinary platform for cutting-edge research in engineering, applied sciences, technological innovation, and design. The journal is focused on fostering collaboration and sharing impactful research findings from all over India.</p>
-        <p>Topics covered include Civil, Mechanical, Electrical, Electronics, Computer Science, Environmental Engineering, AI, Robotics, Quantum Computing, Renewable Energy, and more.</p>
-      </div>
+<div id="aim-scope" class="card">
+  <div class="card-body">
+    <h2 class="section-title">Aim & Scope</h2>
+    <p>The Thiagarajar Journal of Engineering, Science, Design, and Technology (TJESDT) aims to be an interdisciplinary platform for cutting-edge research in engineering, applied sciences, technological innovation, and design. The journal is focused on fostering collaboration and sharing impactful research findings from all over India.</p>
+    <p>Topics covered include Civil, Mechanical, Electrical, Electronics, Computer Science, Environmental Engineering, AI, Robotics, Quantum Computing, Renewable Energy, and more.</p>
+    <a href="javascript:void(0);" id="moreLink" onclick="toggleMoreInfo()">Click here to see More</a>
+    <div id="additionalInfo" style="display:none;">
+      <h3>Engineering:</h3>
+      <ul>
+        <li>Civil, Mechanical, Electrical Engineering</li>
+        <li>Electronics and Communication Engineering</li>
+        <li>Computer Science and Engineering</li>
+        <li>Environmental and Sustainable Engineering</li>
+        <li>Industrial Engineering and Manufacturing</li>
+        <li>Materials Science and Nanotechnology</li>
+        <li>Structural Engineering</li>
+        <li>Robotics and Automation</li>
+      </ul>
+      <h3>Applied Science:</h3>
+      <ul>
+        <li>Physics, Chemistry, and Mathematical Modeling</li>
+        <li>Computational and Data Science</li>
+        <li>Environmental Science and Green Technologies</li>
+        <li>Artificial Intelligence and Machine Learning</li>
+        <li>Quantum Computing and Simulation</li>
+        <li>Cognitive Science</li>
+        <li>Renewable Energy and Smart Grids</li>
+      </ul>
+      <h3>Design:</h3>
+      <ul>
+        <li>Building Design and Urban Infrastructure</li>
+        <li>Product Design and Development</li>
+        <li>Engineering Design and Innovation</li>
+        <li>Computer-Aided Design (CAD) and Simulation Tools</li>
+        <li>Human-Computer Interaction (HCI) and User Experience (UX)</li>
+        <li>Design Thinking and Creative Problem Solving</li>
+      </ul>
+      <h3>Technology:</h3>
+      <ul>
+        <li>Internet of Things (IoT)</li>
+        <li>Cyber-Physical Systems</li>
+        <li>Smart Manufacturing and Industry 4.0</li>
+        <li>Blockchain and Cyber security</li>
+        <li>3D Modeling and Printing</li>
+        <li>Emerging Technologies and Digital Transformation</li>
+        <li>Educational Technology</li>
+      </ul>
     </div>
+  </div>
+</div>
 
-    <!-- Editorial Board Section -->
-    <div id="editorial-board" class="card">
-      <div class="card-body">
-        <h2 class="section-title">Editorial Board</h2>
-        <p>The editorial board consists of leading researchers, professionals, and academics who maintain the integrity and quality of the journal. They ensure that all submitted articles undergo a rigorous peer-review process to meet the highest standards of academic publishing.</p>
-      </div>
-    </div>
+<script>
+  function toggleMoreInfo() {
+    var moreInfo = document.getElementById('additionalInfo');
+    var moreLink = document.getElementById('moreLink');
+    if (moreInfo.style.display === 'none') {
+      moreInfo.style.display = 'block';
+      moreLink.innerHTML = 'Click here to see Less'; // Change text to "Less" when shown
+    } else {
+      moreInfo.style.display = 'none';
+      moreLink.innerHTML = 'Click here to see More'; // Change text back to "More"
+    }
+  }
+</script>
+
 
     <!-- Submission Guidelines Section -->
     <div id="submission-guidelines" class="card">
@@ -205,6 +284,14 @@
           <li>Maximum word count: 7,500 words.</li>
           <li>APA citation style must be used for references.</li>
         </ul>
+      </div>
+    </div>
+
+    <!-- Interdisciplinary Focus -->
+    <div id="interdisciplinary-focus" class="card">
+      <div class="card-body">
+        <h2 class="section-title">Interdisciplinary Focus</h2>
+        <p>The journal encourages interdisciplinary research that bridges the gap between traditional engineering disciplines and the application of emerging technologies. Studies that integrate fields such as robotics, artificial intelligence, sustainability, and design principles to address contemporary challenges are highly encouraged.</p>
       </div>
     </div>
 
@@ -222,6 +309,16 @@
       </div>
     </div>
 
+    <!-- Publication Frequency -->
+    <div id="publication-frequency" class="card">
+      <div class="card-body">
+        <h2 class="section-title">Publication Frequency</h2>
+        <ul>
+          <center>Twice in a year</center>
+        </ul>
+      </div>
+    </div>
+
     <!-- Contact Section -->
     <div id="contact" class="card">
       <div class="card-body">
@@ -231,7 +328,6 @@
         <p>Phone: +123 456 7890</p>
       </div>
     </div>
-
   </div>
 
   <!-- Brief Standard Operating Procedure Section -->
@@ -239,7 +335,7 @@
     <div id="sop-section" class="card">
       <div class="card-body">
         <h2 class="section-title">Brief Standard Operating Procedure for TJESDT</h2>
-        <img src="image.png" alt="Standard Operating Procedure Image" class="img-fluid mb-3">
+        <img src="image.jpg" alt="Standard Operating Procedure Image" class="img-fluid mb-3">
         <p>This is the brief standard operating procedure for the Thiagarajar Journal of Engineering, Science, Design, and Technology. For more detailed guidelines, you can download the full SOP document.</p>
         <a href="sop.pdf" download class="btn btn-primary">Download SOP (PDF)</a>
       </div>
