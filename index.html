@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journal Website</title>
+  <title>Thiagarajar Journal of Engineering, Science, Design, and Technology</title>
   
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- FontAwesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons (Updated CDN) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <!-- Google Fonts: Poppins and Playfair Display -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -17,11 +17,11 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-  background-image: url('tce.jpg'); /* Background image URL */
-  background-size: cover; /* Ensures the image covers the entire page */
-  background-position: center center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the background fixed during scrolling */
-  color: #5a4e3e; /* Relaxing, soft brown tone */
+      background-image: url('tce.jpg'); /* Background image URL */
+      background-size: cover; /* Ensures the image covers the entire page */
+      background-position: center center; /* Centers the image */
+      background-attachment: fixed; /* Keeps the background fixed during scrolling */
+      color: #5a4e3e; /* Relaxing, soft brown tone */
     }
     .navbar {
       background-color: brown; /* Coral color */
@@ -69,6 +69,7 @@
     footer a {
       color:white;
       text-decoration: none;
+      margin: 0 10px;
     }
     footer a:hover {
       text-decoration: underline;
@@ -82,13 +83,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     .card-body {
-       background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .img-gallery img {
-      max-width: 100%;
-      height: auto;
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -118,7 +113,7 @@
   <!-- Header with Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
-    <img src="logo.png" alt="College Logo" style="height: 50px; width: 300px;">
+      <img src="logo.png" alt="TJESDT Logo" style="height: 50px; width: 300px;">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -126,13 +121,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#origin"><i class="fas fa-history"></i> Origin</a>
+          <a class="nav-link" href="#aim-scope"><i class="fas fa-bullseye"></i> Aim & Scope</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#editorial-board"><i class="fas fa-users"></i> Editorial Board</a>
+          <a class="nav-link" href="editorial-board.html"><i class="fas fa-users"></i> Editorial Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="editorial-policies.html"><i class="fas fa-gavel"></i> Editorial Policies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#submission-guidelines"><i class="fas fa-file-alt"></i> Submission Guidelines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publication-types"><i class="fas fa-th"></i> Publication Types</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="browse.html"><i class="fas fa-book"></i> Browse Journals</a>
@@ -147,7 +148,7 @@
     </div>
   </nav>
 
-  <!-- Recent Updates Section with Carousel -->
+  <!-- Recent Updates Section -->
   <div class="recent-updates">
     <h3>Recent Updates</h3>
     <div id="imageCarousel" class="carousel slide" data-ride="carousel">
@@ -171,18 +172,18 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <p>We are excited to announce that our journal is now accepting submissions for the upcoming special issue on Sustainable Development in the Global South. Our editorial board is currently reviewing abstracts, and the full papers will be accepted shortly. Stay tuned for more updates!</p>
+    <p>We are excited to announce that our journal is now accepting submissions for the upcoming special issue on Sustainable Development. The editorial board is reviewing abstracts for upcoming full papers. Stay tuned for more updates!</p>
   </div>
 
   <!-- Home Page Content -->
   <div class="container">
 
-    <!-- Origin Section -->
-    <div id="origin" class="card">
+    <!-- Aim & Scope Section -->
+    <div id="aim-scope" class="card">
       <div class="card-body">
-        <h2 class="section-title">Origin</h2>
-        <p>Our journal was founded in 2001 with the mission to promote academic research and scholarly articles in various disciplines. It has since grown into an internationally recognized platform that attracts scholars from around the world.</p>
-        <p>Since its inception, the journal has been dedicated to providing high-quality, peer-reviewed articles that contribute to the advancement of knowledge in various fields of study.</p>
+        <h2 class="section-title">Aim & Scope</h2>
+        <p>The Thiagarajar Journal of Engineering, Science, Design, and Technology (TJESDT) aims to be an interdisciplinary platform for cutting-edge research in engineering, applied sciences, technological innovation, and design. The journal is focused on fostering collaboration and sharing impactful research findings from all over India.</p>
+        <p>Topics covered include Civil, Mechanical, Electrical, Electronics, Computer Science, Environmental Engineering, AI, Robotics, Quantum Computing, Renewable Energy, and more.</p>
       </div>
     </div>
 
@@ -190,8 +191,7 @@
     <div id="editorial-board" class="card">
       <div class="card-body">
         <h2 class="section-title">Editorial Board</h2>
-        <p>The editorial board consists of esteemed professionals and experts who oversee the peer review process and ensure the highest quality of published work.</p>
-        <p>Our editorial board includes distinguished scholars, professors, and researchers from top universities globally, each bringing a wealth of knowledge and expertise to the journal.</p>
+        <p>The editorial board consists of leading researchers, professionals, and academics who maintain the integrity and quality of the journal. They ensure that all submitted articles undergo a rigorous peer-review process to meet the highest standards of academic publishing.</p>
       </div>
     </div>
 
@@ -199,21 +199,26 @@
     <div id="submission-guidelines" class="card">
       <div class="card-body">
         <h2 class="section-title">Submission Guidelines</h2>
-        <p>Authors wishing to submit to our journal should follow these guidelines:</p>
+        <p>Authors wishing to submit to TJESDT should follow these key guidelines:</p>
         <ul>
-          <li>All manuscripts must be in English and typed in Arial, 12-point font.</li>
-          <li>The manuscript should be no more than 7,500 words, including references and appendices.</li>
-          <li>References must follow APA citation style.</li>
+          <li>Manuscripts must be written in English.</li>
+          <li>Maximum word count: 7,500 words.</li>
+          <li>APA citation style must be used for references.</li>
         </ul>
       </div>
     </div>
 
-    <!-- Browse Journals Section -->
-    <div id="browse-journals" class="card">
+    <!-- Publication Types Section -->
+    <div id="publication-types" class="card">
       <div class="card-body">
-        <h2 class="section-title">Browse Journals</h2>
-        <p>Explore the journals published by our institution, spanning topics from engineering to humanities and social sciences.</p>
-        <p>We regularly update our archives with new issues and articles, ensuring that our readers stay informed on the latest academic research.</p>
+        <h2 class="section-title">Publication Types</h2>
+        <p>TJESDT publishes the following types of content:</p>
+        <ul>
+          <li>Original Research Articles</li>
+          <li>Review Articles</li>
+          <li>Case Studies/Practices</li>
+          <li>Special Issues</li>
+        </ul>
       </div>
     </div>
 
@@ -221,18 +226,36 @@
     <div id="contact" class="card">
       <div class="card-body">
         <h2 class="section-title">Contact</h2>
-        <p>For any inquiries or to get more information, please feel free to reach out to us:</p>
-        <p>Email: <a href="mailto:contact@college.edu">contact@college.edu</a></p>
+        <p>For more information, inquiries, or support, please contact us:</p>
+        <p>Email: <a href="mailto:contact@tjesdt.org">contact@tjesdt.org</a></p>
         <p>Phone: +123 456 7890</p>
       </div>
     </div>
 
   </div>
 
+  <!-- Brief Standard Operating Procedure Section -->
+  <div class="container">
+    <div id="sop-section" class="card">
+      <div class="card-body">
+        <h2 class="section-title">Brief Standard Operating Procedure for TJESDT</h2>
+        <img src="image.png" alt="Standard Operating Procedure Image" class="img-fluid mb-3">
+        <p>This is the brief standard operating procedure for the Thiagarajar Journal of Engineering, Science, Design, and Technology. For more detailed guidelines, you can download the full SOP document.</p>
+        <a href="sop.pdf" download class="btn btn-primary">Download SOP (PDF)</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 College Journal. All Rights Reserved.</p>
-    <p>Contact us at: <a href="mailto:contact@college.edu">contact@college.edu</a> | Phone: +123 456 7890</p>
+    <p>© 2025 Thiagarajar Journal of Engineering, Science, Design, and Technology. All Rights Reserved.</p>
+    <p>Contact us at: <a href="mailto:contact@tjesdt.org">contact@tjesdt.org</a> | Phone: +123 456 7890</p>
+    <div>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="mailto:contact@tjesdt.org"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
   </footer>
 
   <!-- Bootstrap JS, jQuery, and Popper.js -->
@@ -242,4 +265,3 @@
 
 </body>
 </html>
-
